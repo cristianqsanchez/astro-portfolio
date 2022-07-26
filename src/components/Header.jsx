@@ -34,9 +34,11 @@ export default function Header() {
 						</li>
 					</ul>
 				</div>
+				<div>
+					<a className='btn btn-ghost normal-case text text-xl'>Douuu</a>
+				</div>
 			</div>
 
-			<a className='btn btn-ghost normal-case text text-xl'>Douuu</a>
 			<div className='navbar-center hidden lg:flex'>
 				<ul className='menu menu-horizontal p-0'>
 					<li>

@@ -6,6 +6,15 @@ import Card from "../components/Card.jsx";
 
 <Layout title="Welcome to Astro.">
 	<Hero client:load />
-	<Card client:load href="https://github.com/cristianqsanchez/React-and-Morty" img="https://placeimg.com/400/225/arch" alt="card" title="title" text="lorem ipsum dolor"/>
-	<Card client:load href="https://github.com/cristianqsanchez/node-first-website" img="https://github.com/cristianqsanchez/node-first-website/blob/master/docs/screenshot.png?raw=true" alt="website with node" title="Nodejs Website" text="My first website with Nodejs"/>
+	<ul class="flex flex-col flex-wrap place-content-center items-center md:flex-row md:w-full">
+		<li class="p-4">
+			<Card client:load href="https://github.com/cristianqsanchez/React-and-Morty" img="https://github.com/cristianqsanchez/React-and-Morty/blob/master/docs/screenshot.png?raw=true" alt="Rick and morty website" title="React and Morty" text="This site was made with Reactjs and the Rick and Morty API"/>	
+		</li>
+		<li class="p-4">
+			<Card client:load href="https://github.com/cristianqsanchez/node-first-website" img="https://github.com/cristianqsanchez/node-first-website/blob/master/docs/screenshot.png?raw=true" alt="Website with node" title="Nodejs Website" text="My first website with Nodejs, Express and EJS"/>
+		</li>
+		<li class="p-4">
+			<Card client:load href="https://github.com/cristianqsanchez/React-and-Morty" img="https://placeimg.com/400/225/arch" alt="card" title="title" text="lorem ipsum dolor"/>	
+		</li>
+	</ul>
 </Layout>
